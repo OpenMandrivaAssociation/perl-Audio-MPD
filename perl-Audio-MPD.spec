@@ -1,6 +1,6 @@
 %define module	Audio-MPD
 %define name	perl-%{module}
-%define version 0.17.2
+%define version 0.18.1
 %define release %mkrel 1
 
 Name:		%{name}
@@ -14,6 +14,7 @@ Source:         http://www.cpan.org/modules/by-module/Audio/%{module}-%{version}
 Buildrequires:	perl(Module::Build)
 Buildrequires:	perl(Class::Accessor::Fast)
 Buildrequires:	perl(Readonly)
+Buildrequires:	perl(Audio::MPD::Common::Item)
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
