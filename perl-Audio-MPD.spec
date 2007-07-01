@@ -43,7 +43,7 @@ send to the server as the class's methods are called.
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS COPYING Changelog README
+%doc AUTHORS LICENSE README TODO Changes
 %{_bindir}/*
 %{perl_vendorlib}/Audio
 %{_mandir}/man3/*
