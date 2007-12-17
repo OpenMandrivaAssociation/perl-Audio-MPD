@@ -16,7 +16,6 @@ Buildrequires:	perl(Class::Accessor::Fast)
 Buildrequires:	perl(Readonly)
 Buildrequires:	perl(Audio::MPD::Common::Item)
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 Audio::MPD gives a clear object-oriented interface for talking to and
