@@ -1,6 +1,6 @@
 %define module	Audio-MPD
 %define name	perl-%{module}
-%define version 0.19.2
+%define version 0.19.3
 %define release %mkrel 1
 
 Name:		%{name}
