@@ -1,22 +1,23 @@
-%define module	Audio-MPD
-%define name	perl-%{module}
-%define version 0.19.6
-%define release %mkrel 1
+%define upstream_name	 Audio-MPD
+%define upstream_version 0.19.6
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 2
+
 Summary:	Class for talking to MPD (Music Player Daemon) servers 
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Audio/%{module}-%{version}.tar.bz2
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Audio/%{upstream_name}-%{upstream_version}.tar.bz2
+
 Buildrequires:	perl(Module::Build)
 Buildrequires:	perl(Class::Accessor::Fast)
 Buildrequires:	perl(Readonly)
 Buildrequires:	perl(Audio::MPD::Common::Item)
+
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Audio::MPD gives a clear object-oriented interface for talking to and
@@ -25,7 +26,7 @@ is established as soon as a new Audio::MPD object is created. Commands are then
 send to the server as the class's methods are called.
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Build.PL installdirs=vendor
