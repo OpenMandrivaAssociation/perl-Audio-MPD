@@ -1,15 +1,15 @@
 %define upstream_name	 Audio-MPD
-%define upstream_version 0.19.6
+%define upstream_version v0.19.7
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:	Class for talking to MPD (Music Player Daemon) servers 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Audio/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:    http://www.cpan.org/modules/by-module/Audio/%{upstream_name}-%{upstream_version}.tar.gz
 
 Buildrequires:	perl(Module::Build)
 Buildrequires:	perl(Class::Accessor::Fast)
