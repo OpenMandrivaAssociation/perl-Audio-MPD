@@ -1,5 +1,5 @@
 %define upstream_name	 Audio-MPD
-%define upstream_version v0.19.7
+%define upstream_version 1.092950
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -11,10 +11,11 @@ Group:		Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Audio/%{upstream_name}-%{upstream_version}.tar.gz
 
-Buildrequires:	perl(Module::Build)
-Buildrequires:	perl(Class::Accessor::Fast)
-Buildrequires:	perl(Readonly)
 Buildrequires:	perl(Audio::MPD::Common::Item)
+Buildrequires:	perl(Class::Accessor::Fast)
+Buildrequires:	perl(Module::Build)
+Buildrequires:	perl(Readonly)
+Buildrequires:	perl(Test::Corpus::Audio::MPD)
 
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
