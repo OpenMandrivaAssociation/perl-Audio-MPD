@@ -12,6 +12,7 @@ Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Audio/%{upstream_name}-%{upstream_version}.tar.gz
 
 Buildrequires:	perl(Audio::MPD::Common::Item)
+Buildrequires:  perl(Class::Accessor::Fast)
 Buildrequires:	perl(Getopt::Euclid)
 Buildrequires:	perl(Module::Build)
 Buildrequires:	perl(Moose)
