@@ -12,13 +12,13 @@ Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Audio/%{upstream_name}-%{upstream_version}.tar.gz
 
 Buildrequires:	perl(Audio::MPD::Common::Item)
-Buildrequires:  perl(Class::Accessor::Fast)
 Buildrequires:	perl(Getopt::Euclid)
 Buildrequires:	perl(Module::Build)
 Buildrequires:	perl(Moose)
 Buildrequires:	perl(Moose::Util::TypeConstraints)
 Buildrequires:  perl(MooseX::Has::Sugar)
 Buildrequires:	perl(MooseX::SemiAffordanceAccessor)
+Buildrequires:  perl(MooseX::Types::Moose)
 Buildrequires:	perl(Proc::Daemon)
 Buildrequires:	perl(Readonly)
 Buildrequires:	perl(Test::Corpus::Audio::MPD)
