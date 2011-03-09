@@ -1,9 +1,9 @@
 %define upstream_name	 Audio-MPD
-%define upstream_version 1.102260
+%define upstream_version 1.110560
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:	Class for talking to MPD (Music Player Daemon) servers 
 License:	GPL+ or Artistic
