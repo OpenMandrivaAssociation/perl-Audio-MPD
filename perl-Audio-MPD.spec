@@ -1,5 +1,5 @@
 %define upstream_name	 Audio-MPD
-%define upstream_version 1.110560
+%define upstream_version 1.111200
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -23,7 +23,6 @@ Buildrequires:	perl(Readonly)
 Buildrequires:	perl(Test::Corpus::Audio::MPD)
 
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Audio::MPD gives a clear object-oriented interface for talking to and
