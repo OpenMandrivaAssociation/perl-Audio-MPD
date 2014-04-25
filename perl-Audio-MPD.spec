@@ -13,6 +13,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Audio/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(IO::Socket::IP)
 BuildRequires: perl(namespace::autoclean)
 BuildRequires:	perl(Audio::MPD::Common::Item)
 BuildRequires:	perl(Getopt::Euclid)
